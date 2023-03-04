@@ -22,6 +22,7 @@ flux bootstrap github \
     --path=clusters/staging
 
 watch flux get helmreleases --all-namespaces
+kubectl get helmcharts --all-namespaces
 ```
 
 ## production

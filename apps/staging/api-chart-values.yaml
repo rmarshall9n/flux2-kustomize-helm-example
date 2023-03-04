@@ -9,3 +9,5 @@ spec:
       version: ">0.0.1"
       valuesFiles:
         - values.yaml
+  values:
+    environment: staging
