@@ -6,5 +6,5 @@ metadata:
 spec:
   type: oci
   interval: 5m
-  url: oci://public.ecr.aws/a6o8o7v2/api-chart
+  url: oci://public.ecr.aws/a6o8o7v2
 
