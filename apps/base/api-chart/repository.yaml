@@ -5,5 +5,5 @@ metadata:
   namespace: apps
 spec:
   type: oci
-  interval: 5m
+  interval: 1m
   url: oci://public.ecr.aws/a6o8o7v2
