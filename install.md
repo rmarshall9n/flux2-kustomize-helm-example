@@ -22,6 +22,7 @@ flux bootstrap github \
     --path=clusters/staging
 
 watch flux get helmreleases --all-namespaces
+
 kubectl get helmcharts --all-namespaces
 ```
 
@@ -31,10 +32,10 @@ kubectl get helmcharts --all-namespaces
 k3d cluster create production -c cluster-production.yaml
 
 flux bootstrap github \
-    --context=k3d-staging \
+    --context=k3d-production \
     --owner=${GITHUB_USER} \
     --repository=${GITHUB_REPO} \
     --branch=main \
     --personal \
-    --path=clusters/staging
+    --path=clusters/production
 ```
