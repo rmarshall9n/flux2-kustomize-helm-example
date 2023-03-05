@@ -4,3 +4,5 @@ namespace: apps
 resources:
   - repository.yaml
   - release.yaml
+  - image-policy.yaml
+  - image-repository.yaml
