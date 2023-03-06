@@ -7,3 +7,5 @@ spec:
   chart:
     spec:
       version: "0.0.2"
+  values:
+    environment: release
