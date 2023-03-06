@@ -4,7 +4,6 @@ namespace: production
 resources:
   - ../base/podinfo
   - ../base/api-chart
-namePrefix: production-
 patchesStrategicMerge:
   - podinfo-values.yaml
   - api-chart-values.yaml
