@@ -4,7 +4,6 @@ namespace: release
 resources:
   - ../base/podinfo
   - ../base/api-chart
-namePrefix: release-
 patchesStrategicMerge:
   - podinfo-values.yaml
   - api-chart-values.yaml
