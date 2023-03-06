@@ -6,3 +6,5 @@ spec:
   chart:
     spec:
       version: "0.0.2"
+  values:
+    host: production.api

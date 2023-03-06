@@ -8,3 +8,4 @@ spec:
       version: ">0.0.1"
   values:
     environment: release
+    host: release.api
