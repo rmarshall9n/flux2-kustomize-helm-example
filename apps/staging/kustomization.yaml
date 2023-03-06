@@ -4,6 +4,7 @@ namespace: apps
 resources:
   - ../base/podinfo
   - ../base/api-chart
+namePrefix: staging-
 patchesStrategicMerge:
   - podinfo-values.yaml
   - api-chart-values.yaml
