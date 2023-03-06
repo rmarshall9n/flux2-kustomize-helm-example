@@ -8,3 +8,4 @@ spec:
       version: ">0.0.1"
   values:
     environment: staging
+    host: staging.api
