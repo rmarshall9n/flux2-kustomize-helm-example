@@ -14,6 +14,8 @@ export GITHUB_REPO=flux2-kustomize-helm-example
 k3d cluster create staging -c cluster-staging.yaml
 
 flux bootstrap github \
+    --components-extra=image-reflector-controller,image-automation-controller \
+    --read-write-key \
     --context=k3d-staging \
     --owner=${GITHUB_USER} \
     --repository=${GITHUB_REPO} \
@@ -32,6 +34,8 @@ kubectl get helmcharts --all-namespaces
 k3d cluster create production -c cluster-production.yaml
 
 flux bootstrap github \
+    --components-extra=image-reflector-controller,image-automation-controller \
+    --read-write-key \
     --context=k3d-production \
     --owner=${GITHUB_USER} \
     --repository=${GITHUB_REPO} \
