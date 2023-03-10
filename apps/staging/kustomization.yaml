@@ -6,7 +6,7 @@ resources:
   - ../base/api-chart
   - image-automation.yaml
   - image-policy.yaml
-  - image-registry.yaml
+  - image-repository.yaml
 patchesStrategicMerge:
-  - podinfo-values.yaml
-  - api-chart-values.yaml
+  - podinfo-release.yaml
+  - api-chart-release.yaml

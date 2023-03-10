@@ -5,5 +5,5 @@ resources:
   - ../base/podinfo
   - ../base/api-chart
 patchesStrategicMerge:
-  - podinfo-values.yaml
-  - api-chart-values.yaml
+  - podinfo-release.yaml
+  - api-chart-release.yaml

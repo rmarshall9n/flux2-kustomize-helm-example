@@ -26,6 +26,10 @@ flux bootstrap github \
 watch flux get helmreleases --all-namespaces
 
 kubectl get helmcharts --all-namespaces
+
+flux reconcile kustomization flux-system --with-source
+
+kubectl get helmrelease/api-charts -oyaml | grep 'image:'
 ```
 
 ## production
