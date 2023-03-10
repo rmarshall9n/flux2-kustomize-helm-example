@@ -3,8 +3,8 @@
 ## config
 
 ```sh
-export GITHUB_TOKEN=
-export GITHUB_USER=rmarshall9n
+export GITHUB_TOKEN= &&
+export GITHUB_USER=rmarshall9n &&
 export GITHUB_REPO=flux2-kustomize-helm-example
 ```
 

@@ -7,3 +7,6 @@ resources:
 patchesStrategicMerge:
   - podinfo-values.yaml
   - api-chart-values.yaml
+  - image-automation.yaml
+  - image-policy.yaml
+  - image-registry.yaml
