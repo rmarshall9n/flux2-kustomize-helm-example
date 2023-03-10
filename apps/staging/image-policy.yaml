@@ -3,7 +3,7 @@ apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImagePolicy
 metadata:
   name: api-chart
-  namespace: staging
+  namespace: flux-system
 spec:
   imageRepositoryRef:
     name: api-image

@@ -3,7 +3,7 @@ apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImageRepository
 metadata:
   name: api-chart
-  namespace: staging
+  namespace: flux-system
 spec:
   image: public.ecr.aws/a6o8o7v2/api-image
   interval: 1m0s
