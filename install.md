@@ -29,7 +29,8 @@ kubectl get helmcharts --all-namespaces
 
 flux reconcile kustomization flux-system --with-source
 
-kubectl get helmrelease/api-charts -oyaml | grep 'image:'
+kubectl get helmrelease/api-chart -oyaml | grep 'image:'
+
 ```
 
 ## production
