@@ -29,8 +29,12 @@ kubectl get helmcharts --all-namespaces
 
 flux reconcile kustomization flux-system --with-source
 
-kubectl get helmrelease/api-chart -oyaml | grep 'image:'
+kubectl get helmrelease/api-chart -oyaml -n staging | grep 'image:'
 
+k get imagerepository -n flux-system
+k get imagepolicy -n flux-system
+k -n flux-system describe imagerepositories podinfo
+flux get image policy
 ```
 
 ## production

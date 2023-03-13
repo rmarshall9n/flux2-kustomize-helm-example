@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   imageRepositoryRef:
-    name: api-image
+    name: api-chart
   policy:
     semver:
       range: 0.0.x
