@@ -9,4 +9,4 @@ spec:
   values:
     environment: staging
     host: staging.api
-    image: public.ecr.aws/a6o8o7v2/api-image:0.0.1 # {"$imagepolicy": "flux-system:api-chart"}
+    image: public.ecr.aws/a6o8o7v2/api-image:0.0.10 # {"$imagepolicy": "flux-system:api-chart"}
