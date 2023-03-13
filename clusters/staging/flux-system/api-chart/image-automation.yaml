@@ -19,7 +19,7 @@ spec:
   interval: 1m0s
   sourceRef:
     kind: GitRepository
-    name: chart-api
+    name: flux-system
   update:
     path: ../../../../apps
     strategy: Setters
