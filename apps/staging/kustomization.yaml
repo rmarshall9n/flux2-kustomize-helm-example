@@ -4,9 +4,6 @@ namespace: staging
 resources:
   - ../base/podinfo
   - ../base/api-chart
-  - image-automation.yaml
-  - image-policy.yaml
-  - image-repository.yaml
 patchesStrategicMerge:
   - podinfo-release.yaml
   - api-chart-release.yaml

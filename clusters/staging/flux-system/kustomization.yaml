@@ -3,6 +3,9 @@ kind: Kustomization
 resources:
   - gotk-components.yaml
   - gotk-sync.yaml
+  - api-chart/image-automation.yaml
+  - api-chart/image-policy.yaml
+  - api-chart/image-repository.yaml
 labels:
   - pairs:
       toolkit.fluxcd.io/tenant: sre-team
