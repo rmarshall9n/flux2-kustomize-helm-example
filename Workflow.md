@@ -11,6 +11,12 @@ release/* - Branch from develop, apply fixes until releaseable
 hotfix/*  - Branch from master, merge into master and develop
 master    - Stable codebase, merge release in
 
+## Environments
+
+staging - most recent changes on develop branch
+pre-release - release branch for testing
+production - most stable code from master
+
 ## Flow
 
 1. Start new feature/* from develop
@@ -24,6 +30,38 @@ master    - Stable codebase, merge release in
 
 ## Pipelines
 
+feature/*
+  - All feature branches run QA process
+  - Should merge develop before running tests
+  - Should not merge into develop if not up to date with develop
+  - Should not merge if missing reviews
+  - Requires re-review if new changes are pushed since last review
+  - Should merge automatically if everything passes
+
+develop - Run non-critical/slow processes
+
+release/*
+  - All release branches run QA process
+  - Run non-critical/slow processes
+  - Should merge master before running tests
+  - Should not merge into master if not up to date with master
+  - Should not merge if missing reviews
+  - Requires re-review if new changes are pushed since last review
+  - Should merge automatically if everything passes
+
+hotfix/*
+  - All hotfix branches run QA process
+  - Run non-critical/slow processes?
+  - Should merge master before running tests
+  - Should not merge into master if not up to date with master
+  - Should not merge if missing reviews
+  - Requires re-review if new changes are pushed since last review
+  - Should merge automatically into master if everything passes
+  - Should create feature branch/MR to merge into develop
+
+master
+  - When merged, notify about release
+  - When merged, build charts
 
 ## Deployments
 
@@ -35,4 +73,7 @@ pre-release - when a release is created/updated, deploy automatically
 
 production - when merge request is approved, deploy automatically
   tag the release image with semver 0.x.0
+
+
+
 
